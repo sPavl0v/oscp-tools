@@ -667,6 +667,7 @@ try {
 
 foreach ($u in $otherUserDirs) {
     $probePaths = @(
+        (Join-Path $u.FullName "\"),
         (Join-Path $u.FullName "Desktop"),
         (Join-Path $u.FullName "Documents"),
         (Join-Path $u.FullName "Downloads"),
