@@ -599,6 +599,7 @@ foreach ($vk in $vncKeys) {
 Write-Section "High-Yield Directory Targets"
 
 $targetPaths = @(
+    (Join-Path $env:USERPROFILE "\"),
     (Join-Path $env:USERPROFILE "Desktop"),
     (Join-Path $env:USERPROFILE "Documents"),
     (Join-Path $env:USERPROFILE "Downloads"),
